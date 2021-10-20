@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background-color:crimson;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* transition: all 0.3s ease; */
+
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+   font-size: 35px;
+   font-weight:600; 
+}
+
+.navbar .logo a span{
+    color:whitesmoke;
+    transition: all 0.3s ease
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease
+
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+   
+   
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+
+
+}
+
+.navbar .menu li a:hover{
+    color:black;
+}
+
+/* welcome section styling */
+.welcome{
+    display: flex; 
+   background: url(/images/N9oBIc.png) no-repeat center;
+    height: 100vh;
+    color:#fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.welcome .max-width{
+    display: flex;
+    margin: auto 0 auto 40px ; 
+    background: url(/images/)  
+}
+.welcome .home-content .text-1{
+    font-size: 27px;
+}
+.welcome .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.welcome .home-content .text-3{
+    grid-template-columns: auto auto;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.welcome .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+
+
+.main_logo{
+    content: none;
+    float: right;
+    width
+}
+
+.background-image{
+background: url(/images/);
+}
+
+/* about styling */
+section{
+    padding: 100px 0;
+}
+.about, .projects{
+    font-family: 'poppins', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:black;
+    transform: translateX(-50%);
+}
+
+.about .about-content{
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.about .about-content .left{
+    width: 45%;
+
+}
+
+.about .about-content .right-img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+
+}
+
+.about .about-content .right{
+    width: 55%;
+    
+}
+
+.about .column-left{
+ float: right;
+ height: 400px;
+ width: 450px;
+ object-fit: cover;
+ border-radius: 6%;
+     
+}
+
+.about .about-content .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px ;
+    
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content a{
+display: inline-block;
+background: crimson;
+color: #fff;
+font-size: 20px;
+font-weight: 500px;
+padding: 1px 30px;
+margin-top: 20px;
+font-weight: 400;
+border-radius: 6px;
+border: 2px solid crimson;
+transition: all 0.3s ease;        
+}
+
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* projects section styling */
+.projects{
+    color:white;
+    background: #111;
+    margin-bottom:5px    ;
+}
+
+
+.projects .title{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    
+}
+
+.projects .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background:white;
+    transform: translateX(-50%);
+}
+
+.projects .projects-content{
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.projects .projects-content .card{   
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.projects .projects-content .card:hover{
+    background: crimson;
+}
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .projects-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .projects-content .card:hover i{
+    color: #fff;
+}
+.projects .projects-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* footer styling start */
+.footer{
+    padding:40px 0;
+    background-color: white;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d
+}
+
+.footer .social .a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height:38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: black;
+    text-decoration: none;
+    opacity: 0.8;
+}
+    
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .welcome .home-content .text-2{
+        font-size: 70px;
+    }
+    .welcome .home-content .text-3{
+        font-size: 35px;
+    }
+    .welcome .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .projects .projects-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .welcome .home-content .text-2{
+        font-size: 60px;
+    }
+    .welcome .home-content .text-3{
+        font-size: 32px;
+    }
+    .welcome .home-content a{
+        font-size: 20px;
+    }
+    .projects .projects-content .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .welcome .home-content .text-2{
+        font-size: 50px;
+    }
+    .welcome .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
