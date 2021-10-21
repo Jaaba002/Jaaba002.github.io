@@ -5,10 +5,12 @@
     text-decoration: none;
 }
 
-
+/* Den max-width egenskapen definerer den maksimale bredden av et element. */
 .max-width{
     max-width: 1300px;
+    /* skaper mellomrom mellom elementer */
     padding: 0 80px;
+    /* den definerer rommmet rundt deg */
     margin: auto;
 }
 
@@ -16,6 +18,7 @@
 .navbar{
     position: fixed;
     width: 100%;
+    /* så at titlene ikke havner på navbaren */
     z-index: 999;
     padding: 15px 0;
     background-color:crimson;
@@ -26,11 +29,10 @@
 
 }
 
-.navbar.sticky{
-    padding: 15px 0;
-    background-color: crimson;
-}
+
+
 .navbar .max-width{
+    /* å gi beholderen muligheten til å endre varens bredde/høyde for best å fylle den tilgjengelige plassen */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -172,10 +174,10 @@ section{
 .about .column-left{
  float: right;
  height: 400px;
- width: 450px;
+ width: 350px;
  object-fit: cover;
  border-radius: 6%;
-     
+ 
 }
 
 .about .about-content .text{
@@ -212,7 +214,7 @@ transition: all 0.3s ease;
 .projects{
     color:white;
     background: #111;
-    margin-bottom:5px    ;
+    margin-bottom:40px    ;
 }
 
 
@@ -276,18 +278,18 @@ transition: all 0.3s ease;
 }
 
 /* footer styling start */
-.footer{
+.main-footer{
     padding:40px 0;
     background-color: white;
 }
 
-.footer .social{
+.main-footer .social{
     text-align: center;
     padding-bottom: 25px;
     color: #4b4c4d
 }
 
-.footer .social .a{
+.main-footer .social .a{
     font-size: 24px;
     color: inherit;
     border: 1px solid #ccc;
@@ -301,7 +303,7 @@ transition: all 0.3s ease;
     opacity: 0.75;
 }
 
-.footer ul{
+.main-footer ul{
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -310,28 +312,46 @@ transition: all 0.3s ease;
     text-align: center;
 }
 
-.footer ul li a{
+.main-footer ul li a{
     color: black;
     text-decoration: none;
     opacity: 0.8;
 }
     
 
-.footer ul li{
+.main-footer ul li{
     display: inline-block;
     padding: 0 15px;
     color: crimson;
     transition: color 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 }
-.footer ul li a:hover{
+.main-footer ul li a:hover{
     opacity: 1;
 }
 
 html{
     scroll-behavior: smooth;
 }
+
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -409,6 +429,8 @@ html{
         margin-bottom: 35px;
     }
 }
+
+/* media query er den som gjør at alle elemente står der de skal stå selvom displayen endrer seg og at elementene ikke ender opp på andre steder */
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;

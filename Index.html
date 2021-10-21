@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!-- tilpasser vinduskjermen så at de blir bedre display for mobiltelefoner -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    <title>Weelcome to my portfolio</title>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script> src="https://code.jquery.com/jquery-3.6.0.min.js"</script>
+    <title>Welcome to my portfolio</title>
+
     <link rel="stylesheet" href="css.style\style.css">
 </head>
     <body>
       
-    <header class="backround-image"> 
+    <header> 
         
          
         <nav class="navbar">
@@ -32,6 +32,8 @@
      </header> 
 
         <!-- welcome section start -->
+        <!-- class kobler sammen html-elemnter med css -->
+        <!-- id gjør det samme men fungerer bare på html-siden og brukes mest til å navigere -->
         <section class="welcome" id="welcome">
             <div class="max-width">
                 <div class="home-content">
@@ -41,20 +43,20 @@
             </div>
         
         </section>
-
+<!-- section betyr at innholdet inne er gruppert og skal vises som en oppføring i en overskrift over siden. den forholder seg til et enkelt tema som f.eks header, footer osv. -->
+<!-- div deler en seksjon i et html dokument. den brukes til å gruppere blokkelementer for å formatere dem med css. -->
         <!-- About section start -->
         <section class="about" id="about">
             <div class="max-width">
                 <h4 class="title"><strong>About me</strong></h4>
                 <div class="about-content">
                     <div class="column-left">
-                    
                         <img src="/Images/luffy.jpg" alt="" height="400" width="400">
                     </div>
                     <div class="column right">
                         <div class="text">I'm Jaffer and i'm a student at Kuben vgs</div>
-                        <p>Jeg er 17 år gammel og liker å spille spill å se på serier. Jeg ble tipset om denne stillingen av en bekjent – den ser spennende ut! Jeg er en 16 år gammel dataingeniør som har akkurat den erfaringen dere etterspør og er ute etter nye utfordringer, så kanskje jeg er rett kandidat for jobben som Senior dataingeniør. Smerten i seg selv er kjærligheten Hvis han avviser de minste tingene, hvilke nødvendigheter er det, hvor vil det skje, eller vil han på grunn av det møysommelige hatet til smigeriet sørge for den velsignede mannens gratis tjenester? Det er ingen små irritasjoner i gleden av den nåværende vise mannen! Nytelsesglede, ingen hater slike problemer som faller på ham, aldri forlate ham, han avviser ham aldri, la vår rettferdige flukt sies annerledes, han er ikke vår arkitekt, men om smertene som følger ham. Han hater smerten som fortjener oss til tider når vi lett kan tåle så mye som mulig! Virkelig varig hardt arbeid, heier på alle den gangen. Vår feil er bundet til å velge, å søke den resulterende smerten av valg, ofte kalt blindet av tiden fordi, hvis vi kan unnslippe, vil vi fange dem? Å avvise.</p>
-                        <a href="https://udeoslokommuneno-my.sharepoint.com/personal/jaaba002_osloskolen_no/Documents/CV-mal%20(kopi)%202.docx" target="blank">Download CV</a>
+                        <p>Jeg er 17 år gammel og liker å spille spill og se på serier. Akkurat nå så er jeg en elev hos kuben og går på data-linjen.  Jeg ble tipset om denne stillingen av en bekjent – den ser spennende ut! Jeg er en 16 år gammel dataingeniør som har akkurat den erfaringen dere etterspør og er ute etter nye utfordringer, så kanskje jeg er rett kandidat for jobben som Senior dataingeniør. Smerten i seg selv er kjærligheten Hvis han avviser de minste tingene, hvilke nødvendigheter er det, hvor vil det skje, eller vil han på grunn av det møysommelige hatet til smigeriet sørge for den velsignede mannens gratis tjenester? Det er ingen små irritasjoner i gleden av den nåværende vise mannen! Nytelsesglede, ingen hater slike problemer som faller på ham, aldri forlate ham, han avviser ham aldri, la vår rettferdige flukt sies annerledes, han er ikke vår arkitekt, men om smertene som følger ham. Han hater smerten som fortjener oss til tider </p>
+                        <a href="https://udeoslokommuneno-my.sharepoint.com/personal/jaaba002_osloskolen_no/Documents/CV-mal%20(kopi)%202.docx">Download CV</a>
                     </div>
                 </div>
              </div> 
@@ -70,7 +72,7 @@
                         <a href="https://udeoslokommuneno-my.sharepoint.com/:p:/r/personal/jaaba002_osloskolen_no/_layouts/15/Doc.aspx?sourcedoc=%7BEA123CF5-7EA4-42EC-9000-966405C4755B%7D&file=Kondensator.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&ct=1634726608403&wdOrigin=OFFICECOM-WEB.START.OTHER&cid=8115431e-6ed7-444d-abcb-3a1a5b4dfda5" target="blank">
                            <i class="fas fa-paint-brush"></i>
                            <div class="text">Kondensator</div>
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                           <p>I denne presentasjonen så forklarer jeg hva en kondensator er og hvordan den fungerer.</p>
                         </a>   
                     </div>
                 </div>
@@ -79,7 +81,7 @@
                         <a href="https://www.tinkercad.com/things/f3e6BVdrTCi-led-potensiometer/editel" target=blank>
                         <i class="fas fa-china"></i>
                         <div class="text">Led-potensiometer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <p>Koblet sammen en breadboard medpotensiomet og led til et arduino og programmerte den til å blinke.</p>
                         </a>
                     </div>
                 </div>
@@ -96,7 +98,8 @@
         </div> 
   </section>
     <!-- Footer section start -->
-    <section class="footer">
+    <!-- bunntekst for seksjoner -->
+    <section class="main-footer">
         <div class="social">
             <a href="https://www.instagram.com/techlandgames/" target="blank"><img src="images\instagram-Logo-PNG-Transparent-Background-download.png" alt=Instagram width=50px height=50px></i></a>
             <a href="https://github.com/Jaaba002/Jaaba002.github.io" target="blank"><img src="Images\2048px-Octicons-mark-github.svg.png" alt=gtihub width=50px height=50px></a>
@@ -105,7 +108,7 @@
 
         <ul class="list">
             <li>
-                <a href="#home"><strong>Home</strong></a>
+                <a href="#welcome"><strong>Home</strong></a>
             </li>
             <li>
                 <a href="#about"><strong>About</strong></a>
@@ -115,9 +118,11 @@
             </li>
         </ul>
            
-        </div>   
-    </section>
-    <script src="script/script.js"></script>
-
+        </div> 
+        
+        <footer>
+            <span>Inspired By <a href="https://www.youtube.com/watch?v=tcskp-ncN0I" target="blank">CodingNepal</a>
+        </footer>  
+    
     </body>
 </html>
