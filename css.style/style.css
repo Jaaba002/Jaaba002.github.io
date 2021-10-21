@@ -430,7 +430,8 @@ footer span a:hover{
     }
 }
 
-/* media query er den som gjør at alle elemente står der de skal stå selvom displayen endrer seg og at elementene ikke ender opp på andre steder */
+/* media query er den som gjør at alle elemente står der de skal stå selvom displayen endrer
+ seg og at elementene ikke ender opp på andre steder */
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
